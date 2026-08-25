@@ -30,7 +30,7 @@ export const activities = [
     title: "Party Trip",
     image: "/images/partytrip.jpg",
     description:
-      "Lielformāta komandu spēles un atrakcijas uzņēmumu pasākumiem.",
+      "Lielformāta spēļu komplekts ar 10–20 dažādām aktivitātēm. Mūsu komanda nodrošina spēļu vadīšanu, tiesāšanu un raitu pasākuma norisi.",
 
     participants: "20–500+",
     duration: "Visa diena",
@@ -43,7 +43,7 @@ export const activities = [
     title: "Mobilais futbola laukums",
     image: "/images/futbols.jpg",
     description:
-      "Mobilais piepūšamais futbola laukums dažādiem pasākumiem.",
+      "Pilnībā aprīkots futbola laukums, ko uzstādām jūsu izvēlētajā vietā, nodrošinot kvalitatīvu spēles vidi un aktīvu dalībnieku iesaisti.",
 
     participants: "10–50",
     duration: "Pēc pieprasījuma",
