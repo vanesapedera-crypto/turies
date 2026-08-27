@@ -1,72 +1,69 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 export default function PartyHero() {
   return (
-    <section className="relative overflow-hidden border-b border-white/10">
+    <section className="relative overflow-hidden border-b border-white/10 bg-[#090909]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,#991b1b30,transparent_60%)]" />
 
-      {/* Fona efekts */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,#7f1d1d30,transparent_60%)]" />
+      <div className="grid min-h-[760px] lg:grid-cols-[42%_58%]">
+        <div className="flex items-center">
+          <div className="w-full max-w-[620px] ml-auto px-6 lg:px-10 py-24">
+            <Link
+              href="/aktivitates"
+              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[4px] text-zinc-400 transition hover:text-white"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Atpakaļ uz aktivitātēm
+            </Link>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-20">
-
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-          {/* Kreisā puse */}
-          <div>
-
-            <span className="uppercase tracking-[5px] text-red-500 font-semibold">
+            <span className="mt-8 block uppercase tracking-[5px] text-red-500 font-semibold">
               Aktivitāšu formāts
             </span>
 
-            <h1 className="mt-5 text-7xl lg:text-8xl font-black leading-none">
-              PARTY
-              <br />
-              <span className="text-red-600">
+            <h1 className="mt-6 leading-[0.88] font-black">
+              <span className="block text-7xl lg:text-[110px] text-white">
+                PARTY
+              </span>
+              <span className="block text-7xl lg:text-[110px] text-red-600">
                 TRIP
               </span>
             </h1>
 
-            <p className="mt-10 text-lg text-gray-300 leading-8 max-w-xl">
-              Party Trip ir pilnībā pielāgojams aktivitāšu formāts
-              uzņēmumu pasākumiem, sporta spēlēm un festivāliem.
+            <p className="mt-8 max-w-lg text-xl leading-9 text-gray-300">
+              Party Trip ir lielformāta spēļu programma, kuru pielāgojam katra
+              pasākuma vajadzībām, auditorijai un mērķim.
             </p>
 
-            <p className="mt-6 text-lg text-gray-400 leading-8 max-w-xl">
-              Izvēlamies piemērotākās spēles, nodrošinām inventāru,
-              profesionālu vadīšanu un parūpējamies, lai pasākums
-              būtu aizraujošs ikvienam dalībniekam.
+            <p className="mt-6 max-w-lg text-lg leading-8 text-gray-400">
+              Mēs nodrošinām visu pasākuma norisi — no spēļu uzstādīšanas un
+              vadīšanas līdz punktu skaitīšanai un uzvarētāju paziņošanai.
             </p>
 
             <Link
               href="/kontakti"
-              className="inline-flex items-center mt-10 px-8 py-4 rounded-xl bg-red-600 hover:bg-red-700 transition font-bold"
+              className="inline-flex mt-10 rounded-xl bg-red-600 px-8 py-4 font-bold uppercase tracking-wide transition hover:bg-red-700"
             >
               Pieteikt pasākumu
             </Link>
-
           </div>
-
-          {/* Labā puse */}
-          <div className="relative">
-
-            <div className="absolute -inset-6 bg-red-600/10 blur-3xl rounded-full" />
-
-            <Image
-              src="/images/partytrip-hero.jpg"
-              alt="Party Trip"
-              width={900}
-              height={650}
-              priority
-              className="relative rounded-3xl object-cover w-full h-[620px]"
-            />
-
-          </div>
-
         </div>
 
-      </div>
+        <div className="relative min-h-[760px]">
+          <Image
+            src="/images/partytrip-hero.jpg"
+            alt="Party Trip"
+            fill
+            priority
+            sizes="58vw"
+            className="object-cover"
+          />
 
+          <div className="absolute inset-y-0 left-0 w-56 bg-gradient-to-r from-[#090909] via-[#090909]/70 to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,#dc262640,transparent_45%)]" />
+        </div>
+      </div>
     </section>
   );
 }

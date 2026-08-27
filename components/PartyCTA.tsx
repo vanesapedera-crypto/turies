@@ -1,44 +1,35 @@
 import Link from "next/link";
+import { CalendarDays } from "lucide-react";
 
 export default function PartyCTA() {
   return (
-    <section className="py-28 bg-black border-t border-white/10">
-      <div className="max-w-5xl mx-auto px-6 text-center">
+    <section className="py-10">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="rounded-2xl border border-red-900/40 bg-[#1a0b0b] px-6 py-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]">
+          <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="flex items-center gap-5">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-red-600/10">
+                <CalendarDays className="h-9 w-9 text-red-500" />
+              </div>
 
-        <span className="uppercase tracking-[5px] text-red-500 font-semibold">
-          Sazinies ar mums
-        </span>
+              <div>
+                <h2 className="text-2xl font-black text-white md:text-[28px]">
+                  Gatavs padarīt savu pasākumu neaizmirstamu?
+                </h2>
+                <p className="mt-1 text-sm text-zinc-400 md:text-base">
+                  Sazinies ar mums un kopā izveidosim labāko izklaidi Tavā pasākumā!
+                </p>
+              </div>
+            </div>
 
-        <h2 className="mt-5 text-5xl lg:text-6xl font-black text-white leading-tight">
-          Radīsim neaizmirstamu
-          <br />
-          Party Trip pasākumu.
-        </h2>
-
-        <p className="mt-8 text-xl text-zinc-400 leading-8 max-w-3xl mx-auto">
-          Pastāsti mums par savu pasākumu, un mēs sagatavosim
-          individuālu piedāvājumu ar piemērotākajām aktivitātēm,
-          inventāru un pilnu pasākuma organizēšanu.
-        </p>
-
-        <div className="mt-12 flex justify-center gap-5 flex-wrap">
-
-          <Link
-            href="/kontakti"
-            className="bg-red-600 hover:bg-red-700 transition px-8 py-4 rounded-xl font-bold"
-          >
-            Saņemt piedāvājumu
-          </Link>
-
-          <a
-            href="tel:+37126705817"
-            className="border border-white/20 hover:border-red-600 hover:text-red-500 transition px-8 py-4 rounded-xl font-bold"
-          >
-            Zvanīt mums
-          </a>
-
+            <Link
+              href="/kontakti"
+              className="inline-flex rounded-xl bg-red-600 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-red-700"
+            >
+              Piesakies pasākumam
+            </Link>
+          </div>
         </div>
-
       </div>
     </section>
   );
