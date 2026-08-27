@@ -8,7 +8,7 @@ export default function PartyHero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,#991b1b30,transparent_60%)]" />
 
       <div className="grid min-h-[760px] lg:grid-cols-[42%_58%]">
-        <div className="flex items-center">
+        <div className="relative z-10 flex items-center">
           <div className="w-full max-w-[620px] ml-auto px-6 lg:px-10 py-24">
             <Link
               href="/aktivitates"
@@ -50,7 +50,7 @@ export default function PartyHero() {
           </div>
         </div>
 
-        <div className="relative min-h-[760px]">
+        <div className="relative z-20 min-h-[760px] -ml-8 lg:-ml-16">
           <Image
             src="/images/partytrip-hero.jpg"
             alt="Party Trip"

@@ -5,11 +5,14 @@ export default function PartyCTA() {
   return (
     <section className="py-10">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="rounded-2xl border border-red-900/40 bg-[#1a0b0b] px-6 py-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]">
-          <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+        <div className="relative overflow-hidden rounded-xl border border-red-950/50 bg-[#1a0d0d] px-6 py-5">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(127,29,29,0.35),rgba(127,29,29,0.08),rgba(127,29,29,0.25))]" />
+          <div className="absolute inset-y-0 right-0 w-48 bg-[radial-gradient(circle_at_right,rgba(220,38,38,0.18),transparent_70%)]" />
+
+          <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-5">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-red-600/10">
-                <CalendarDays className="h-9 w-9 text-red-500" />
+              <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-red-600/10">
+                <CalendarDays className="h-8 w-8 text-red-500" />
               </div>
 
               <div>
@@ -24,7 +27,7 @@ export default function PartyCTA() {
 
             <Link
               href="/kontakti"
-              className="inline-flex rounded-xl bg-red-600 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-red-700"
+              className="inline-flex rounded-md bg-red-600 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-red-700"
             >
               Piesakies pasākumam
             </Link>
