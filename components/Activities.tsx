@@ -1,21 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
 import { activities } from "@/lib/activities";
 
 export default function Activities() {
   return (
-    <section className="py-24 bg-[#161616]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-
-        <div className="text-center mb-20">
-          <span className="uppercase tracking-[5px] text-red-500 font-semibold">
+    <section className="bg-[#161616] py-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+        <div className="mb-20 text-center">
+          <span className="font-semibold uppercase tracking-[5px] text-red-500">
             Aktivitātes
           </span>
 
-          <h2 className="text-5xl lg:text-6xl font-black text-white mt-6">
+          <h2 className="mt-6 text-5xl font-black text-white lg:text-6xl">
             Izvēlies savu piedzīvojumu
           </h2>
 
-          <p className="text-gray-400 mt-8 max-w-3xl mx-auto text-lg">
+          <p className="mx-auto mt-8 max-w-3xl text-lg text-gray-400">
             Piedāvājam plašu aktivitāšu klāstu uzņēmumu saliedēšanās
             pasākumiem un sporta spēlēm.
           </p>
@@ -26,22 +26,24 @@ export default function Activities() {
             <Link
               key={activity.slug}
               href={`/aktivitates/${activity.slug}`}
-              className="group relative block overflow-hidden rounded-3xl h-[500px]"
+              className="group relative block h-[500px] overflow-hidden rounded-3xl"
             >
-              <img
+              <Image
                 src={activity.image}
                 alt={activity.title}
-                className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 100vw, 1200px"
+                className="object-cover transition duration-700 group-hover:scale-105"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
               <div className="relative z-10 flex h-full flex-col justify-end p-10">
-                <h2 className="text-4xl lg:text-5xl font-black">
+                <h2 className="text-4xl font-black lg:text-5xl">
                   {activity.title}
                 </h2>
 
-                <p className="text-gray-200 max-w-2xl mt-5 text-lg">
+                <p className="mt-5 max-w-2xl text-lg text-gray-200">
                   {activity.description}
                 </p>
 
@@ -54,7 +56,6 @@ export default function Activities() {
             </Link>
           ))}
         </div>
-
       </div>
     </section>
   );

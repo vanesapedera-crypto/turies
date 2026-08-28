@@ -21,12 +21,12 @@ const infoCards = [
   {
     icon: Map,
     title: "VIETAS VAJADZĪBAS",
-    text: "Nepieciešama līdzena teritorija, kur droši uzstādīt trasi un nodrošināt kustību ap to.",
+    text: "Nepieciešama piemērota teritorija, kur droši uzstādīt trasi un nodrošināt kustību ap to.",
   },
   {
     icon: Users,
     title: "DALĪBNIEKI",
-    text: "Vienlaikus trasē var atrasties līdz 8–10 dalībniekiem, pārējie gaida drošā zonā.",
+    text: "Vienlaikus trasē var atrasties vairāki dalībnieki, pārējie gaida drošā zonā.",
   },
   {
     icon: ShieldCheck,
@@ -41,10 +41,10 @@ const infoCards = [
 ];
 
 const gallery = [
-  "/images/horizontala-trase-1.jpg",
-  "/images/horizontala-trase-2.jpg",
-  "/images/horizontala-trase-3.jpg",
-  "/images/horizontala-trase-4.jpg",
+  "/images/vertikala-trase-1.jpg",
+  "/images/vertikala-trase-2.jpg",
+  "/images/vertikala-trase-3.jpg",
+  "/images/vertikala-trase-4.jpg",
 ];
 
 const highlights = [
@@ -53,7 +53,7 @@ const highlights = [
   { icon: ShieldCheck, title: "KOPĀ", text: "Komandas gars un kopīgs azarts." },
 ];
 
-export default function HorizontalaTrasePage() {
+export default function VertikalaTrasePage() {
   return (
     <main className="bg-[#0b0b0b] text-white">
       <section className="relative overflow-hidden border-b border-white/10 bg-[#090909]">
@@ -76,7 +76,7 @@ export default function HorizontalaTrasePage() {
 
               <h1 className="mt-6 leading-[0.88] font-black">
                 <span className="block text-7xl lg:text-[110px] text-white">
-                  HORIZONTĀLĀ
+                  VERTIKĀLĀ
                 </span>
                 <span className="block text-7xl lg:text-[110px] text-red-600">
                   TRASE
@@ -84,7 +84,7 @@ export default function HorizontalaTrasePage() {
               </h1>
 
               <p className="mt-8 max-w-lg text-xl leading-9 text-gray-300">
-                Aizraujoša horizontālā virvju trase, kas pārbauda līdzsvaru,
+                Aizraujoša vertikālā virvju trase, kas pārbauda līdzsvaru,
                 veiklību un komandas garu.
               </p>
 
@@ -104,8 +104,8 @@ export default function HorizontalaTrasePage() {
 
           <div className="relative z-10 min-h-[760px]">
             <Image
-              src="/images/horizontala-trase-hero.jpg"
-              alt="Horizontālā trase"
+              src="/images/vertikala-trase-hero.jpg"
+              alt="Vertikālā trase"
               fill
               priority
               sizes="58vw"
@@ -158,7 +158,7 @@ export default function HorizontalaTrasePage() {
                 <div className="relative aspect-[4/3] w-full">
                   <Image
                     src={image}
-                    alt={`Horizontālā trase ${index + 1}`}
+                    alt={`Vertikālā trase ${index + 1}`}
                     fill
                     sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover object-center transition duration-500 hover:scale-105"

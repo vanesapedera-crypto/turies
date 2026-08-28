@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import PartyCTA from "@/components/PartyCTA";
 import Footer from "@/components/Footer";
+import PartyCTA from "@/components/PartyCTA";
 import {
   ArrowLeft,
   Users,
@@ -15,45 +15,39 @@ import {
 const infoCards = [
   {
     icon: CircleCheckBig,
-    title: "PIEMĒROTA",
-    text: "Bērniem, jauniešiem un pieaugušajiem. Piemērota uzņēmumu pasākumiem, svētkiem un sporta dienām.",
+    title: "PIEMĒROTS",
+    text: "Bērniem, jauniešiem un pieaugušajiem. Lieliski der sporta dienām, svētkiem un uzņēmumu pasākumiem.",
   },
   {
     icon: Map,
     title: "VIETAS VAJADZĪBAS",
-    text: "Nepieciešama līdzena teritorija, kur droši uzstādīt trasi un nodrošināt kustību ap to.",
+    text: "Nepieciešama līdzena teritorija, kur droši uzstādīt laukumu un nodrošināt kustību ap to.",
   },
   {
     icon: Users,
     title: "DALĪBNIEKI",
-    text: "Vienlaikus trasē var atrasties līdz 8–10 dalībniekiem, pārējie gaida drošā zonā.",
+    text: "Piemērots gan mazām komandām, gan lielākām grupām, kur svarīgs ir azarts un kustība.",
   },
   {
     icon: ShieldCheck,
     title: "IEKĻAUTS",
-    text: "Trases uzstādīšana, drošības aprīkojums, instruktāža un profesionāla uzraudzība visas aktivitātes laikā.",
+    text: "Laukuma uzstādīšana, inventārs un mūsu komandas uzraudzība visas aktivitātes laikā.",
   },
   {
     icon: SlidersHorizontal,
     title: "PIELĀGOJAM",
-    text: "Trasi pielāgojam jūsu pasākuma vajadzībām, vietai un dalībnieku vecumam vai sagatavotībai.",
+    text: "Laukumu pielāgojam jūsu pasākuma vajadzībām, vietai un dalībnieku vecumam.",
   },
 ];
 
 const gallery = [
-  "/images/horizontala-trase-1.jpg",
-  "/images/horizontala-trase-2.jpg",
-  "/images/horizontala-trase-3.jpg",
-  "/images/horizontala-trase-4.jpg",
+  "/images/futbola-laukums-1.jpg",
+  "/images/futbola-laukums-2.jpg",
+  "/images/futbola-laukums-3.jpg",
+  "/images/futbola-laukums-4.jpg",
 ];
 
-const highlights = [
-  { icon: MapPinned, title: "KUSTĪBA", text: "Aktīva un aizraujoša pieredze." },
-  { icon: Users, title: "DROŠI", text: "Piemērota dažādiem sagatavotības līmeņiem." },
-  { icon: ShieldCheck, title: "KOPĀ", text: "Komandas gars un kopīgs azarts." },
-];
-
-export default function HorizontalaTrasePage() {
+export default function MobilaisFutbolaLaukumsPage() {
   return (
     <main className="bg-[#0b0b0b] text-white">
       <section className="relative overflow-hidden border-b border-white/10 bg-[#090909]">
@@ -71,26 +65,27 @@ export default function HorizontalaTrasePage() {
               </Link>
 
               <span className="mt-8 block uppercase tracking-[5px] text-red-500 font-semibold">
-                Mobilais virvju parks
+                Mobilais sporta formāts
               </span>
 
               <h1 className="mt-6 leading-[0.88] font-black">
                 <span className="block text-7xl lg:text-[110px] text-white">
-                  HORIZONTĀLĀ
+                  FUTBOLA
                 </span>
                 <span className="block text-7xl lg:text-[110px] text-red-600">
-                  TRASE
+                  LAUKUMS
                 </span>
               </h1>
 
               <p className="mt-8 max-w-lg text-xl leading-9 text-gray-300">
-                Aizraujoša horizontālā virvju trase, kas pārbauda līdzsvaru,
-                veiklību un komandas garu.
+                Aizraujoša mobilā futbola aktivitāte, kas rada kustību, azartu
+                un komandas garu jebkurā pasākumā.
               </p>
 
               <p className="mt-6 max-w-lg text-lg leading-8 text-gray-400">
-                Lieliski piemērota dažāda vecuma dalībniekiem un pasākumiem,
-                kuros svarīga kustība, azarts un kopā būšana.
+                Lieliski piemērots dažāda vecuma dalībniekiem, sporta dienām,
+                svētkiem un pasākumiem, kuros svarīga ir enerģija un kopā
+                būšana.
               </p>
 
               <Link
@@ -104,8 +99,8 @@ export default function HorizontalaTrasePage() {
 
           <div className="relative z-10 min-h-[760px]">
             <Image
-              src="/images/horizontala-trase-hero.jpg"
-              alt="Horizontālā trase"
+              src="/images/futbola-laukums.jpg"
+              alt="Mobilais futbola laukums"
               fill
               priority
               sizes="58vw"
@@ -141,7 +136,7 @@ export default function HorizontalaTrasePage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
             <span className="font-semibold uppercase tracking-[5px] text-red-500">
-              Trase darbībā
+              Laukums darbībā
             </span>
 
             <h2 className="mt-4 text-5xl font-black text-white">
@@ -158,7 +153,7 @@ export default function HorizontalaTrasePage() {
                 <div className="relative aspect-[4/3] w-full">
                   <Image
                     src={image}
-                    alt={`Horizontālā trase ${index + 1}`}
+                    alt={`Mobilais futbola laukums ${index + 1}`}
                     fill
                     sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover object-center transition duration-500 hover:scale-105"

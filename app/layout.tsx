@@ -1,15 +1,14 @@
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import type { ReactNode } from "react";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="lv">
-      <body>
-        <Navbar />
+      <body className="bg-[#0d0d0d] text-white antialiased">
         {children}
       </body>
     </html>
