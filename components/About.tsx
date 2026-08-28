@@ -233,8 +233,7 @@ export default function About() {
           </p>
 
           <p className="text-gray-400 mt-5 leading-7">
-            Atbildu par mājaslapas izstrādi, piedāvājumu sagatavošanu,
-            klientu komunikāciju un uzņēmuma vizuālo identitāti.
+            xxx
           </p>
 
         </div>
@@ -261,8 +260,7 @@ export default function About() {
           </p>
 
           <p className="text-gray-400 mt-5 leading-7">
-            Nodrošina drošu aktivitāšu norisi un palīdz dalībniekiem
-            pārvarēt izaicinājumus.
+           xxx
           </p>
 
         </div>
@@ -285,11 +283,38 @@ export default function About() {
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
-            Pasākumu koordinators
+            xxx
           </p>
 
           <p className="text-gray-400 mt-5 leading-7">
-            Plāno pasākumu norisi un rūpējas, lai viss noritētu bez aizķeršanās.
+xxx
+          </p>
+
+        </div>
+
+      </div>
+
+         {/* Darbinieks 5 */}
+      <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
+
+        <img
+          src="/images/agija.jpg"
+          alt="Aagija"
+          className="w-full h-72 object-cover"
+        />
+
+        <div className="p-7">
+
+          <h3 className="text-2xl font-black">
+            Agija
+          </h3>
+
+          <p className="text-red-500 mt-2 font-semibold">
+            xxx
+          </p>
+
+          <p className="text-gray-400 mt-5 leading-7">
+xxx
           </p>
 
         </div>
@@ -297,6 +322,33 @@ export default function About() {
       </div>
 
     </div>
+
+       {/* Darbinieks 6 */}
+      <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
+
+        <img
+          src="/images/madara.jpg"
+          alt="Madara"
+          className="w-full h-72 object-cover"
+        />
+
+        <div className="p-7">
+
+          <h3 className="text-2xl font-black">
+            Madara
+          </h3>
+
+          <p className="text-red-500 mt-2 font-semibold">
+            xxx
+          </p>
+
+          <p className="text-gray-400 mt-5 leading-7">
+xxx
+          </p>
+
+        </div>
+
+      </div>
 
   </div>
 </section>
