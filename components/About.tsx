@@ -229,7 +229,7 @@ export default function About() {
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
-            Instruktors
+            Projekta vadītājs
           </p>
 
           <p className="text-gray-400 mt-5 leading-7">
@@ -271,15 +271,15 @@ export default function About() {
       <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
 
         <img
-          src="/images/vanesa.jpg"
-          alt="Vanesa"
+          src="/images/vitalijs.jpg"
+          alt="Vitālijs"
           className="w-full h-72 object-cover"
         />
 
         <div className="p-7">
 
           <h3 className="text-2xl font-black">
-            Vanesa
+            Vitālijs
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
@@ -299,7 +299,7 @@ xxx
 
         <img
           src="/images/agija.jpg"
-          alt="Aagija"
+          alt="Agija"
           className="w-full h-72 object-cover"
         />
 
@@ -327,6 +327,33 @@ xxx
       <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
 
         <img
+          src="/images/vanesa.jpg"
+          alt="Vanesa"
+          className="w-full h-72 object-cover"
+        />
+
+        <div className="p-7">
+
+          <h3 className="text-2xl font-black">
+            Vanesa
+          </h3>
+
+          <p className="text-red-500 mt-2 font-semibold">
+            xxx
+          </p>
+
+          <p className="text-gray-400 mt-5 leading-7">
+xxx
+          </p>
+
+        </div>
+
+      </div>
+
+ {/* Darbinieks 7 */}
+      <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
+
+        <img
           src="/images/madara.jpg"
           alt="Madara"
           className="w-full h-72 object-cover"
@@ -349,7 +376,6 @@ xxx
         </div>
 
       </div>
-
   </div>
 </section>
 

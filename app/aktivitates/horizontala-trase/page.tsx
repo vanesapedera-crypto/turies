@@ -61,7 +61,7 @@ export default function HorizontalaTrasePage() {
 
         <div className="grid min-h-[760px] lg:grid-cols-[42%_58%]">
           <div className="relative z-30 flex items-center">
-            <div className="w-full max-w-[620px] ml-auto px-6 lg:px-10 py-20">
+            <div className="w-full max-w-[620px] ml-auto px-6 py-20 lg:px-10">
               <Link
                 href="/aktivitates"
                 className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[4px] text-zinc-400 transition hover:text-white"
@@ -70,15 +70,15 @@ export default function HorizontalaTrasePage() {
                 Atpakaļ uz aktivitātēm
               </Link>
 
-              <span className="mt-8 block uppercase tracking-[5px] text-red-500 font-semibold">
+              <span className="mt-8 block uppercase tracking-[5px] font-semibold text-red-500">
                 Mobilais virvju parks
               </span>
 
               <h1 className="mt-6 leading-[0.88] font-black">
-                <span className="block text-7xl lg:text-[110px] text-white">
+                <span className="block text-7xl text-white lg:text-[110px]">
                   HORIZONTĀLĀ
                 </span>
-                <span className="block text-7xl lg:text-[110px] text-red-600">
+                <span className="block text-7xl text-red-600 lg:text-[110px]">
                   TRASE
                 </span>
               </h1>
@@ -95,7 +95,7 @@ export default function HorizontalaTrasePage() {
 
               <Link
                 href="/kontakti"
-                className="inline-flex mt-10 rounded-xl bg-red-600 px-8 py-4 font-bold uppercase tracking-wide transition hover:bg-red-700"
+                className="mt-10 inline-flex rounded-xl bg-red-600 px-8 py-4 font-bold uppercase tracking-wide transition hover:bg-red-700"
               >
                 Pieteikt pasākumu
               </Link>
@@ -125,11 +125,15 @@ export default function HorizontalaTrasePage() {
               <div
                 key={title}
                 className={`py-6 text-center md:px-4 ${
-                  index !== infoCards.length - 1 ? "md:border-r md:border-white/10" : ""
+                  index !== infoCards.length - 1
+                    ? "md:border-r md:border-white/10"
+                    : ""
                 }`}
               >
                 <Icon className="mx-auto h-10 w-10 text-red-500" />
-                <h3 className="mt-4 text-lg font-black tracking-wide">{title}</h3>
+                <h3 className="mt-4 text-lg font-black tracking-wide">
+                  {title}
+                </h3>
                 <p className="mt-3 text-sm leading-7 text-zinc-300">{text}</p>
               </div>
             ))}
@@ -141,31 +145,58 @@ export default function HorizontalaTrasePage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
             <span className="font-semibold uppercase tracking-[5px] text-red-500">
-              Trase darbībā
+              BRENDINGS
             </span>
 
-            <h2 className="mt-4 text-5xl font-black text-white">
-              Kā tas izskatās
+            <h2 className="mt-4 text-4xl font-black text-white lg:text-5xl">
+                Mobīlā trase ar Jūsu zīmola identitāti
             </h2>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-zinc-400">
+               Mobilā trase var kļūt par vienu no pasākuma centrālajiem aktivitāšu objektiem, kas piesaista apmeklētāju uzmanību un veicina aktīvu iesaisti. Papildus piedāvājam iespēju trasi personalizēt un brendot ar jūsu uzņēmuma logo, nodrošinot zīmola redzamību visa pasākuma laikā.
+            </p>
           </div>
 
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-            {gallery.map((image, index) => (
-              <div
-                key={image}
-                className="overflow-hidden rounded-3xl border border-white/10 bg-black/70"
-              >
-                <div className="relative aspect-[4/3] w-full">
-                  <Image
-                    src={image}
-                    alt={`Horizontālā trase ${index + 1}`}
-                    fill
-                    sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover object-center transition duration-500 hover:scale-105"
-                  />
-                </div>
-              </div>
-            ))}
+          <div className="mt-14 grid gap-6 lg:grid-cols-3 lg:auto-rows-[260px]">
+            <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black/70 lg:col-span-2 lg:row-span-2">
+              <Image
+                src="/images/horizontala-trase-1.jpg"
+                alt="Horizontālā trase 1"
+                fill
+                sizes="(min-width: 1024px) 66vw, 100vw"
+                className="object-cover object-center transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black/70">
+              <Image
+                src="/images/horizontala-trase-2.jpg"
+                alt="Horizontālā trase 2"
+                fill
+                sizes="(min-width: 1024px) 33vw, 100vw"
+                className="object-cover object-center transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black/70">
+              <Image
+                src="/images/horizontala-trase-3.jpg"
+                alt="Horizontālā trase 3"
+                fill
+                sizes="(min-width: 1024px) 33vw, 100vw"
+                className="object-cover object-center transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black/70 lg:col-span-2">
+              <Image
+                src="/images/horizontala-trase-4.jpg"
+                alt="Horizontālā trase 4"
+                fill
+                sizes="(min-width: 1024px) 66vw, 100vw"
+                className="object-cover object-center transition duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </section>
