@@ -15,7 +15,7 @@ const stats = [
   },
   {
     icon: Star,
-    value: "10+",
+    value: "8+",
     title: "GADU PIEREDZE",
   },
   {

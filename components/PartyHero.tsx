@@ -23,10 +23,10 @@ export default function PartyHero() {
             </span>
 
             <h1 className="mt-6 leading-[0.88] font-black">
-              <span className="block text-7xl lg:text-[110px] text-white">
+              <span className="block text-5xl sm:text-6xl lg:text-[110px] text-white">
                 PARTY
               </span>
-              <span className="block text-7xl lg:text-[110px] text-red-600">
+              <span className="block text-5xl sm:text-6xl lg:text-[110px] text-red-600">
                 TRIP
               </span>
             </h1>

@@ -1,7 +1,7 @@
 export default function WhyUs() {
   const stats = [
     {
-      title: "15+",
+      title: "8+",
       subtitle: "gadu pieredze",
     },
     {
