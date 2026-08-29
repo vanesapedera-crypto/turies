@@ -8,17 +8,8 @@ import { FaDice } from "react-icons/fa";
 import { FaPersonHiking } from "react-icons/fa6";
 
 const services = [
- {
+{
   id: 1,
-  title: "PARTY TRIP",
-  description:
-    "Lielformāta spēļu komplekts ar 10–20 dažādām aktivitātēm. Mūsu komanda nodrošina spēļu vadīšanu, tiesāšanu un raitu pasākuma norisi.",
-  image: "/images/party-trip.jpg",
-  icon: FaDice,
-  alt: "Party Trip",
-},
-  {
-  id: 2,
   title: "MOBILAIS VIRVJU PARKS",
   description:
     "Horizontālās un vertikālās virvju trases, kas sniedz aizraujošus izaicinājumus, attīsta komandas sadarbību un rada neaizmirstamu piedzīvojumu.",
@@ -27,13 +18,22 @@ const services = [
   alt: "Mobilais virvju parks",
 },
   {
-  id: 3,
+  id: 2,
   title: "FUTBOLA LAUKUMS",
   description:
     "Pilnībā aprīkots futbola laukums, ko uzstādām jūsu izvēlētajā vietā, nodrošinot kvalitatīvu spēles vidi un aktīvu dalībnieku iesaisti.",
   image: "/images/futbola-laukums.jpg",
 icon: FaFutbol,
   alt: "Futbola laukums",
+},
+{
+  id: 3,
+  title: "PARTY TRIP",
+  description:
+    "Lielformāta spēļu komplekts ar 10–20 dažādām aktivitātēm. Mūsu komanda nodrošina spēļu vadīšanu, tiesāšanu un raitu pasākuma norisi.",
+  image: "/images/party-trip.jpg",
+  icon: FaDice,
+  alt: "Party Trip",
 },
 {
   id: 4,

@@ -47,27 +47,23 @@ export default function ProcessSection() {
       {/* Banner */}
 <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
 
-  <iframe
-    className="absolute inset-0 w-full h-full"
-    src="https://www.youtube.com/embed/3v7L6LN5-EI?start=78&autoplay=1&mute=1&loop=1&playlist=3v7L6LN5-EI&controls=0&rel=0&playsinline=1"
-    title="Turies video"
-    allow="autoplay; encrypted-media"
-    allowFullScreen
-  />
+<div className="overflow-hidden rounded-[32px] border border-zinc-200 shadow-2xl">
+  <div className="relative aspect-video">
+    <iframe
+      className="absolute inset-0 h-full w-full"
+      src="https://www.youtube.com/embed/3v7L6LN5-EI?start=78&autoplay=1&mute=1&loop=1&playlist=3v7L6LN5-EI&controls=1&rel=0&playsinline=1"
+      title="Turies video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
+</div>
 
   {/* Tumšs pārklājums */}
   <div className="absolute inset-0 bg-black/60" />
 
   {/* Teksts */}
   <div className="relative z-10 text-center text-white max-w-4xl px-6">
-
-    <h2 className="text-4xl lg:text-6xl font-black uppercase leading-tight">
-      Mēs parūpējamies par visu
-      <br />
-      pasākuma norisi.
-    </h2>
-
-    <div className="w-16 h-1 bg-red-600 mx-auto my-6 rounded-full" />
 
   </div>
 
