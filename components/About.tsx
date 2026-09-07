@@ -204,10 +204,7 @@ export default function About() {
             Uzņēmuma vadītāja
           </p>
 
-          <p className="text-gray-400 mt-5 leading-7">
-            Atbild par uzņēmuma attīstību, pasākumu organizēšanu un sadarbību
-            ar klientiem.
-          </p>
+        
 
         </div>
 
@@ -232,9 +229,7 @@ export default function About() {
             Projekta vadītājs
           </p>
 
-          <p className="text-gray-400 mt-5 leading-7">
-            xxx
-          </p>
+          
 
         </div>
 
@@ -259,9 +254,7 @@ export default function About() {
             Instruktors
           </p>
 
-          <p className="text-gray-400 mt-5 leading-7">
-           xxx
-          </p>
+          
 
         </div>
 
@@ -283,12 +276,10 @@ export default function About() {
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
-            xxx
+             Instruktors
           </p>
 
-          <p className="text-gray-400 mt-5 leading-7">
-xxx
-          </p>
+         
 
         </div>
 
@@ -310,47 +301,16 @@ xxx
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
-            xxx
+             Instruktore
           </p>
 
-          <p className="text-gray-400 mt-5 leading-7">
-xxx
-          </p>
+         
 
         </div>
 
       </div>
-
-    </div>
 
        {/* Darbinieks 6 */}
-      <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
-
-        <img
-          src="/images/vanesa.jpg"
-          alt="Vanesa"
-          className="w-full h-72 object-cover"
-        />
-
-        <div className="p-7">
-
-          <h3 className="text-2xl font-black">
-            Vanesa
-          </h3>
-
-          <p className="text-red-500 mt-2 font-semibold">
-            xxx
-          </p>
-
-          <p className="text-gray-400 mt-5 leading-7">
-xxx
-          </p>
-
-        </div>
-
-      </div>
-
- {/* Darbinieks 7 */}
       <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
 
         <img
@@ -366,17 +326,39 @@ xxx
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
-            xxx
-          </p>
-
-          <p className="text-gray-400 mt-5 leading-7">
-xxx
+             Instruktore
           </p>
 
         </div>
 
       </div>
+
+ {/* Darbinieks 7 */}
+      <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
+
+        <img
+          src="/images/vanesa.jpg"
+          alt="Vanesa"
+          className="w-full h-72 object-cover"
+        />
+
+        <div className="p-7">
+
+          <h3 className="text-2xl font-black">
+            Vanesa
+          </h3>
+
+          <p className="text-red-500 mt-2 font-semibold">
+            Pārdošanas speciāliste
+          </p>
+
+          
+
+        </div>
+
+      </div>
   </div>
+</div>
 </section>
 
       {/* CTA */}

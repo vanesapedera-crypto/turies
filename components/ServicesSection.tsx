@@ -10,7 +10,7 @@ import { FaPersonHiking } from "react-icons/fa6";
 const services = [
 {
   id: 1,
-  title: "MOBILAIS VIRVJU PARKS",
+  title: "MOBILĀS VIRVJU TRASES",
   description:
     "Horizontālās un vertikālās virvju trases, kas sniedz aizraujošus izaicinājumus, attīsta komandas sadarbību un rada neaizmirstamu piedzīvojumu.",
   image: "/images/virvju-parks.jpg",
