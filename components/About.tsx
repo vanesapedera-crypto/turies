@@ -337,6 +337,56 @@ export default function About() {
       <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
 
         <img
+          src="/images/madara1.jpg"
+          alt="Madara"
+          className="w-full h-72 object-cover"
+        />
+
+        <div className="p-7">
+
+          <h3 className="text-2xl font-black">
+            Madara
+          </h3>
+
+          <p className="text-red-500 mt-2 font-semibold">
+            Dizains un noformējums
+          </p>
+
+          
+
+        </div>
+
+      </div>
+
+       {/* Darbinieks 8 */}
+      <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
+
+        <img
+          src="/images/Gunta.jpg"
+          alt="Gunta"
+          className="w-full h-72 object-cover"
+        />
+
+        <div className="p-7">
+
+          <h3 className="text-2xl font-black">
+            Gunta
+          </h3>
+
+          <p className="text-red-500 mt-2 font-semibold">
+            Pasākumu moderatore
+          </p>
+
+          
+
+        </div>
+
+      </div>
+
+       {/* Darbinieks 9 */}
+      <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
+
+        <img
           src="/images/vanesa.jpg"
           alt="Vanesa"
           className="w-full h-72 object-cover"
@@ -357,6 +407,7 @@ export default function About() {
         </div>
 
       </div>
+
   </div>
 </div>
 </section>
