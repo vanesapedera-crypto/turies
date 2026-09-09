@@ -399,7 +399,7 @@ export default function About() {
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
-            Klientu konultante
+            Klientu konsultante
           </p>
 
           

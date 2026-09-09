@@ -168,25 +168,26 @@ export default function MobilaisFutbolaLaukumsPage() {
       </h2>
     </div>
 
-    <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {gallery.map((image, index) => (
-        <div
-          key={image}
-          className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-black/70 ${
-            index === 0
-              ? "sm:col-span-2 lg:col-span-2 aspect-[16/10]"
-              : "aspect-[4/3]"
-          }`}
-        >
-          <Image
-            src={image}
-            alt={`Mobilais futbola laukums ${index + 1}`}
-            fill
-            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover transition duration-500 group-hover:scale-105"
-          />
-        </div>
-      ))}
+    <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/10 bg-black/70">
+        <Image
+          src={gallery[0]}
+          alt="Mobilais futbola laukums 1"
+          fill
+          sizes="(min-width: 640px) 50vw, 100vw"
+          className="object-cover transition duration-500 hover:scale-105"
+        />
+      </div>
+
+      <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/10 bg-black/70">
+        <Image
+          src={gallery[1]}
+          alt="Mobilais futbola laukums 2"
+          fill
+          sizes="(min-width: 640px) 50vw, 100vw"
+          className="object-cover transition duration-500 hover:scale-105"
+        />
+      </div>
     </div>
   </div>
 </section>
