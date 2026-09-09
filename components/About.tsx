@@ -349,7 +349,7 @@ export default function About() {
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
-            Dizains un noformējums
+            Pasākumu noformējuma un rebrendinga koordinatore
           </p>
 
           
@@ -362,7 +362,7 @@ export default function About() {
       <div className="bg-[#242424] rounded-3xl overflow-hidden border border-white/10 hover:border-red-600 transition">
 
         <img
-          src="/images/Gunta.jpg"
+          src="/images/gunta.jpg"
           alt="Gunta"
           className="w-full h-72 object-cover"
         />
@@ -399,7 +399,7 @@ export default function About() {
           </h3>
 
           <p className="text-red-500 mt-2 font-semibold">
-            Pārdošanas speciāliste
+            Klientu konultante
           </p>
 
           
