@@ -156,36 +156,40 @@ export default function MobilaisFutbolaLaukumsPage() {
       </section>
             {/* GALERIJA */}
 
-      <section className="border-t border-white/10 bg-[#0b0b0b] py-24">
-        <div className="mx-auto max-w-7xl px-6">
+    <section className="border-t border-white/10 bg-[#0b0b0b] py-24">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="text-center">
+      <span className="font-semibold uppercase tracking-[5px] text-red-500">
+        Galerija
+      </span>
 
+      <h2 className="mt-4 text-4xl font-black text-white lg:text-5xl">
+        Kā tas izskatās
+      </h2>
+    </div>
 
-          <div className="mt-14 grid gap-6 lg:grid-cols-3 lg:auto-rows-[260px]">
-
-            <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black/70 lg:col-span-2 lg:row-span-2">
-              <Image
-                src={gallery[0]}
-                alt="Mobilais futbola laukums"
-                fill
-                sizes="(min-width:1024px) 66vw,100vw"
-                className="object-cover transition duration-500 group-hover:scale-105"
-              />
-            </div>
-
-            <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black/70">
-              <Image
-                src={gallery[1]}
-                alt="Mobilais futbola laukums"
-                fill
-                sizes="(min-width:1024px) 33vw,100vw"
-                className="object-cover transition duration-500 group-hover:scale-105"
-              />
-            </div>
-
-          </div>
-
+    <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {gallery.map((image, index) => (
+        <div
+          key={image}
+          className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-black/70 ${
+            index === 0
+              ? "sm:col-span-2 lg:col-span-2 aspect-[16/10]"
+              : "aspect-[4/3]"
+          }`}
+        >
+          <Image
+            src={image}
+            alt={`Mobilais futbola laukums ${index + 1}`}
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover transition duration-500 group-hover:scale-105"
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <PartyCTA />
       <Footer />
