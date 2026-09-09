@@ -163,9 +163,6 @@ export default function MobilaisFutbolaLaukumsPage() {
         Galerija
       </span>
 
-      <h2 className="mt-4 text-4xl font-black text-white lg:text-5xl">
-        Kā tas izskatās
-      </h2>
     </div>
 
     <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
